@@ -12,16 +12,13 @@ if(argvs.length === 1){
 console.log("argvs env", env);
 
 let eventArr = String(process.env.npm_lifecycle_event).split('-');
-application = eventArr[1] || application || 'forgame';
+application = eventArr[1] || application || 'domesticApp';
 let version = '0.2.9';
 console.log("application", application);
 
 const appArr = [
-  { name: 'forgame', author: 'ForGame', id: 1 },
-  { name: 'falcon', author: 'Falcon', id: 2 },
-  { name: 'WisdomMultiply', author: 'WisdomMultiply', id: 3 },
-  { name: 'rotai', author: 'Rotai', id: 4 },
-  { name: 'isen', author: 'ISen', id: 5 },
+  { name: 'domesticApp', author: 'Domestic', id: 1 },
+  { name: 'globalApp', author: 'Global', id: 2 }
 ];
 
 class buildConf {
@@ -65,7 +62,7 @@ class buildConf {
       },
       publish: [{
         provider: 'generic',
-        url: `http://vidm.${env}.myapp.com/app/${opts.id}/`
+        url: `http://${env}.myapp.com/app/${opts.id}/`
       }],
       releaseInfo: {
         // releaseName: executableName,
@@ -77,7 +74,6 @@ class buildConf {
           version,
           dev: `http://localhost:1515/#/login?logoId=${opts.id}`,
           test: `http://bms.dev.myapp.com/#/login?logoId=${opts.id}`,
-          uat: `http://bms.uat.myapp.com/#/login?logoId=${opts.id}`,
           prod: `http://bms.myapp.com/#/login?logoId=${opts.id}`,
         }
       },

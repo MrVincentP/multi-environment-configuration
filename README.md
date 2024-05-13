@@ -47,31 +47,19 @@ build folder is for webpack, config folder is for electron.
     your package.json should like this, when your project is electron:
     "scripts": {
         "start": "chcp 65001 && cross-env NODE_ENV=dev electron . --trace-deprecation --win --config config/electron.config.js",
-        "build-forgame-test": "cross-env NODE_ENV=test electron-builder --win --config config/electron.config.js",
-        "build-forgame-prod": "cross-env NODE_ENV=prod electron-builder --win --config config/electron.config.js",
-        "build-falcon-test": "cross-env NODE_ENV=test electron-builder --win --config config/electron.config.js",
-        "build-falcon-prod": "cross-env NODE_ENV=prod electron-builder --win --config config/electron.config.js",
-        "build-WisdomMultiply-test": "cross-env NODE_ENV=test electron-builder --win --config config/electron.config.js",
-        "build-WisdomMultiply-prod": "cross-env NODE_ENV=prod electron-builder --win --config config/electron.config.js",
-        "build-rotai-test": "cross-env NODE_ENV=test electron-builder --win --config config/electron.config.js",
-        "build-rotai-prod": "cross-env NODE_ENV=prod electron-builder --win --config config/electron.config.js",
-        "build-isen-test": "cross-env NODE_ENV=test electron-builder --win --config config/electron.config.js",
-        "build-isen-prod": "cross-env NODE_ENV=prod electron-builder --win --config config/electron.config.js"
+        "build-domesticApp-test": "cross-env NODE_ENV=test electron-builder --win --config config/electron.config.js",
+        "build-domesticApp-prod": "cross-env NODE_ENV=prod electron-builder --win --config config/electron.config.js",
+        "build-globalApp-test": "cross-env NODE_ENV=test electron-builder --win --config config/electron.config.js",
+        "build-globalApp-prod": "cross-env NODE_ENV=prod electron-builder --win --config config/electron.config.js"
     }
 
     config file is ./config/electron.config.js
     dist folder structures:
         prod:
             version/
-                forgame / xxxx
-                falcon / xxxx
-                WisdomMultiply / xxxx
-                rotai / xxxx
-                isen / xxxxx
+                domesticApp / xxxx
+                globalApp / xxxx
         test: 
             version/
-                forgame / xxxx
-                falcon / xxxx
-                WisdomMultiply / xxxx
-                rotai / xxxx
-                isen / xxxxx
+                domesticApp / xxxx
+                globalApp / xxxx
