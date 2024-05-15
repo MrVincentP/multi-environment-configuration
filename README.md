@@ -60,6 +60,8 @@ build folder is for webpack, config folder is for electron.
                 domesticApp / xxxx
                 globalApp / xxxx
         test: 
+
+    my electron demo project https://github.com/MrVincentP/electron-updater-builder-multi-env
             version/
                 domesticApp / xxxx
                 globalApp / xxxx
