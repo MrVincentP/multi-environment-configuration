@@ -10,6 +10,11 @@ This set of basic configuration code is being tested on Vue3+webpack5 and Vue2+w
 
 I will supplement the project code based on the complete implementation of this code later.
 
+my electron demo project https://github.com/MrVincentP/electron-updater-builder-multi-env
+
+my vue3 demo project https://github.com/MrVincentP/vue3-js-ts-webpack5-multi-env
+
+
 # Principle
 Analysis and Separation of Node based Running Instructions.
 
@@ -64,4 +69,3 @@ build folder is for webpack, config folder is for electron.
                 domesticApp / xxxx
                 globalApp / xxxx
 
-my electron demo project https://github.com/MrVincentP/electron-updater-builder-multi-env
